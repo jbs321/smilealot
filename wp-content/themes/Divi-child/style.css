@@ -1,0 +1,280 @@
+/*
+ Theme Name:   Divi Child
+ Theme URI:    http://example.com/twenty-fourteen-child/
+ Description:  Divi Child Theme
+ Author:       CastleCS - Marketing & Advertising
+ Author URI:   http://www.castlecs.com
+ Template:     Divi
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  Divi-child
+*/
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/* reduce margins/padding on page headings */
+.et_pb_fullwidth_header .et_pb_fullwidth_header_container {
+	width:100%;
+}
+@media (min-width:1405px) {
+	.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content { margin-left:0; }
+}
+.et_pb_fullwidth_header .header-content {
+	padding:0;
+}
+
+.et_header_style_left #et-top-navigation, .et_header_style_split #et-top-navigation {
+padding-left: 0 !important;
+}
+
+.et_header_style_left #et-top-navigation nav > ul > li > a, .et_header_style_split #et-top-navigation nav > ul > li > a {
+padding-bottom: 10px;
+}
+
+.et_header_style_left #et-top-navigation, .et_header_style_split #et-top-navigation {
+padding-top: 15px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Cinzel);
+
+
+@font-face {
+	font-family: 'ElegantIcons';
+	src:url('fonts/ElegantIcons.eot');
+	src:url('fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ElegantIcons.woff') format('woff'),
+		url('fonts/ElegantIcons.ttf') format('truetype'),
+		url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon_star, .icon_star-half { 
+	font-family: 'ElegantIcons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon_star:before {
+	content: "\e033";
+	color:#cd620b;
+}
+.icon_star-half:before {
+	content: "\e034";
+	color:#cd620b;
+}
+
+
+
+
+
+h1, h2, h3, h4, h5, #cta .et_pb_promo_button, #sidebar-form
+ {
+	font-family: 'Cinzel', serif !important;
+}
+
+
+h2 {
+	font-size:32px;
+}
+
+h3 {
+	font-size:28px;
+}
+
+
+/* = Navigation
+-------------------------------------------------------------- */ 
+#main-header {padding:10px 0;}
+
+#main-header nav#top-menu-nav {
+	padding-top: 10px;
+}
+
+#top-menu li {
+	padding-left: 15px;
+	padding-right: 15px;
+	border-left:solid #025996 1px;
+}
+
+#top-menu li > a {
+	padding-bottom: 10px;
+	padding-top:10px;
+}
+
+#top-menu #menu-item-263 {
+	border-left:solid #014f85 0px;
+}
+
+#top-menu li.current-menu-item > a {
+
+}
+
+#top-menu li.current-menu-ancestor > a, #top-menu li.current-menu-item > a, .bottom-nav li.current-menu-item > a {
+    color: #025996 !important;
+}
+
+#top-menu a:hover {
+    color: #025996;
+}
+
+
+/* = Secondary Nav
+-------------------------------------------------------------- */
+
+#et-info{
+	font-size:14px;
+	float:right;
+	color:#fff;
+}
+#et-info .highlight{
+	font-size:14px;
+	color:#6ec0ff;
+}
+
+#et-info-address {
+	font-size:14px;
+	float:left;
+	color:#fff;
+}
+
+/* = footer
+-------------------------------------------------------------- */
+#footer-info {
+	text-align:center;
+	font-size:12px;
+	margin: 0 auto;
+	float:none;
+}
+
+/* = cta
+-------------------------------------------------------------- */
+
+#cta h2
+{
+	font-size:28px;
+}
+
+#cta .et_pb_promo
+{
+	margin-top:60px;
+}
+#cta .et_pb_column {
+    float: left;
+    margin-right: 0px;
+}
+
+#cta,
+#cta .et_pb_row
+{
+    padding: 0px !important;
+}
+
+
+
+
+/* = offer
+-------------------------------------------------------------- */
+
+#offer h2
+{
+	font-size:25px;
+	color:#d8d8d8 !important;
+}
+#offer .et_pb_text {
+    margin-bottom: 0px;
+    width: 100%;
+}
+#offer .et_pb_row {
+    padding: 0;
+}
+
+
+/* =right sidebar
+-------------------------------- */
+
+#sidebar-form {
+	text-align:center;
+	background-color:#0054a6;
+	padding:40px 20px 40px 20px;
+	border-radius: 15px;
+	font-size:21px;
+}
+
+#sidebar-form h2 {
+	font-size:40px; /* changed from 55px */
+	/*line-height:30px;*/
+	padding-bottom:30px;
+}
+
+.et_pb_widget_area_right {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+#text-2 {
+    margin: 0 0 40px 0px;
+}
+
+
+.sidebar-button{
+	background-color:#fff;
+	padding:10px 5px 10px 5px;
+	border-radius: 5px;
+	display:inline-block;
+	margin-top:30px;
+}
+
+.sidebar-button a{
+	color:#0054a6 !important;
+}
+
+
+/* =main page
+-------------------------------- */
+#main-content, .et_pb_section {
+    background-color: #f0f7fb;
+}
+
+
+
+#main-content .container:before {
+    background-color: #e2e2e2;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 0px;
+}
+
+#single-post .et_pb_section {
+    padding: 0;
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+	#et-info-address {
+		display: block;
+		text-align: center;
+		float: none;
+	}
+	#et-info {
+		float: none;
+	}
+	#top-header {
+		line-height: 1.2;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.et_pb_slide_content { 
+		display: block !important; 
+		padding: 0 20px; 
+	}
+}
